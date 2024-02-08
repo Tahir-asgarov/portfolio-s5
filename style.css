@@ -1,0 +1,153 @@
+:root {
+    --secondary-color: #666;
+    --introduction-span-color: #ff8a56;
+}
+
+
+
+* {
+    text-decoration: none;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav a {
+    color: #222;
+    margin-right: 20px;
+}
+
+/* 576 dan kicik ekranlar(ekstra kicik) - col-12 */
+/* 576-768  ekranlar(kicik) - col */
+/* 768-991  ekranlar(plansetler) - col-md(medium device) */
+/* 991-1200  ekranlar(notebook lar ) -  */
+/* 1200-1400 PC  */
+/* 1400 + (smart TV) */
+
+
+/* TODO INTRODUCTION START */
+
+.introduction .intro-left-side h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.introduction .intro-left-side h1 span {
+    color: var(--introduction-span-color);
+}
+
+.introduction .intro-left-side article {
+    color: var(--secondary-color);
+    font-weight: 400;
+
+}
+
+.introduction .intro-left-side .book-a-call {
+    margin-top: 40px;
+}
+
+.introduction .intro-left-side .book {
+    background: #222;
+    color: #fff;
+    width: 151px;
+    height: 58px;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+
+/* TODO INTRODUCTION FINISH */
+
+
+
+
+@media(max-width:575px) {
+    .parentdiv {
+        max-width: 100%;
+    }
+}
+
+@media(min-width:576px) {
+    .parentdiv {
+        max-width: 540px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:768px) {
+    .parentdiv {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:992px) {
+    .parentdiv {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .introduction {
+        display: flex;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+
+
+    }
+
+    .introduction .intro-left-side h1 {
+        font-size: 79px;
+    }
+
+    .introduction .intro-left-side {
+        padding: 92px 0;
+    }
+
+    .introduction .intro-right-side {
+        padding-top: 72px;
+    }
+}
+
+@media(min-width:1200px) {
+    .parentdiv {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:1400px) {
+    .parentdiv {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width:768px) {
+    header nav {
+        display: block;
+    }
+
+    .fa-bars {
+        display: none;
+    }
+}
